@@ -100,19 +100,19 @@ Credits to Benchmark.Net project, the following setup was used (some details omi
 
 Here is performance benchmark on serializing a list of 10000 objects with 3 string and 3 integer properties set:
 
-|                                         Method |        Job |            Toolchain |       Mean |     Error |    StdDev |
-|----------------------------------------------- |----------- |--------------------- |-----------:|----------:|----------:|
-|                    NewtonsoftJsonNet_Serialize | Job-KZPAWI |             .NET 6.0 |  14.907 ms | 0.0221 ms | 0.0196 ms |
-|      NewtonsoftJsonNet_SerializeAndDeserialize | Job-KZPAWI |             .NET 6.0 | 132.012 ms | 1.2940 ms | 1.0103 ms |
-|                       SystemTextJson_Serialize | Job-KZPAWI |             .NET 6.0 |   3.622 ms | 0.0345 ms | 0.0322 ms |
-|            SystemTextJson_SerializeDeserialize | Job-KZPAWI |             .NET 6.0 |  11.184 ms | 0.0143 ms | 0.0134 ms |
-|                               Clutch_Serialize | Job-KZPAWI |             .NET 6.0 |   2.228 ms | 0.0263 ms | 0.0246 ms |
-|                    Clutch_SerializeDeserialize | Job-KZPAWI |             .NET 6.0 |   9.798 ms | 0.0755 ms | 0.0669 ms |
-| Clutch_SerializeDeserializeWithBuildingContext | Job-KZPAWI |             .NET 6.0 |  25.934 ms | 0.1856 ms | 0.1736 ms |
-|                    NewtonsoftJsonNet_Serialize | Job-IMDXNF | .NET Framework 4.7.2 |  19.872 ms | 0.1025 ms | 0.0959 ms |
-|      NewtonsoftJsonNet_SerializeAndDeserialize | Job-IMDXNF | .NET Framework 4.7.2 | 150.681 ms | 2.4712 ms | 2.1907 ms |
-|                       SystemTextJson_Serialize | Job-IMDXNF | .NET Framework 4.7.2 |   8.639 ms | 0.0111 ms | 0.0104 ms |
-|            SystemTextJson_SerializeDeserialize | Job-IMDXNF | .NET Framework 4.7.2 |  24.103 ms | 0.0637 ms | 0.0564 ms |
-|                               Clutch_Serialize | Job-IMDXNF | .NET Framework 4.7.2 |   5.683 ms | 0.0270 ms | 0.0252 ms |
-|                    Clutch_SerializeDeserialize | Job-IMDXNF | .NET Framework 4.7.2 |  24.167 ms | 0.1217 ms | 0.1139 ms |
-| Clutch_SerializeDeserializeWithBuildingContext | Job-IMDXNF | .NET Framework 4.7.2 |  33.751 ms | 0.3051 ms | 0.2854 ms |
+|                                         Method |            Toolchain |       Mean |     Error |    StdDev |
+|----------------------------------------------- |--------------------- |-----------:|----------:|----------:|
+|                    NewtonsoftJsonNet_Serialize |             .NET 6.0 |  14.907 ms | 0.0221 ms | 0.0196 ms |
+|      NewtonsoftJsonNet_SerializeAndDeserialize |             .NET 6.0 | 132.012 ms | 1.2940 ms | 1.0103 ms |
+|                       SystemTextJson_Serialize |             .NET 6.0 |   3.622 ms | 0.0345 ms | 0.0322 ms |
+|            SystemTextJson_SerializeDeserialize |             .NET 6.0 |  11.184 ms | 0.0143 ms | 0.0134 ms |
+|                               Clutch_Serialize |             .NET 6.0 |   2.228 ms | 0.0263 ms | 0.0246 ms |
+|                    Clutch_SerializeDeserialize |             .NET 6.0 |   9.798 ms | 0.0755 ms | 0.0669 ms |
+| Clutch_SerializeDeserializeWithBuildingContext |             .NET 6.0 |  25.934 ms | 0.1856 ms | 0.1736 ms |
+|                    NewtonsoftJsonNet_Serialize | .NET Framework 4.7.2 |  19.872 ms | 0.1025 ms | 0.0959 ms |
+|      NewtonsoftJsonNet_SerializeAndDeserialize | .NET Framework 4.7.2 | 150.681 ms | 2.4712 ms | 2.1907 ms |
+|                       SystemTextJson_Serialize | .NET Framework 4.7.2 |   8.639 ms | 0.0111 ms | 0.0104 ms |
+|            SystemTextJson_SerializeDeserialize | .NET Framework 4.7.2 |  24.103 ms | 0.0637 ms | 0.0564 ms |
+|                               Clutch_Serialize | .NET Framework 4.7.2 |   5.683 ms | 0.0270 ms | 0.0252 ms |
+|                    Clutch_SerializeDeserialize | .NET Framework 4.7.2 |  24.167 ms | 0.1217 ms | 0.1139 ms |
+| Clutch_SerializeDeserializeWithBuildingContext | .NET Framework 4.7.2 |  33.751 ms | 0.3051 ms | 0.2854 ms |
